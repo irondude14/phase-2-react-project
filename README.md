@@ -1,18 +1,14 @@
-# Getting Started with Create React App
+# My Favorite Movies App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This App has a list of my favorite movies.
 
-## Available Scripts
+## List of components
 
-In the project directory, you can run:
+This app the following list of components:
 
-### `npm start`
+### NavBar
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+The NavBar has the following functionality: 1. NightMode Toggle; 2. Name and Logo of the App; 3. Basic navigation buttons;
 
 ### `npm test`
 
