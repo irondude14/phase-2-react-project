@@ -8,22 +8,19 @@ This app the following list of components:
 
 ### NavBar
 
-The NavBar has the following functionality: 1. NightMode Toggle; 2. Name and Logo of the App; 3. Basic navigation buttons;
+The NavBar has the following functionality/features:
 
-### `npm test`
+1. NightMode Toggle;
+2. Name and Logo of the App;
+3. Basic navigation buttons;
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### MoviesList
 
-### `npm run build`
+The Movies Component is showing list of the movies that I like.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### SubmitForm
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+This component has a form that allows to add a movie to the list.
 
 ### `npm run eject`
 
