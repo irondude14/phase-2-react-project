@@ -20,7 +20,7 @@ The MoviesList Component is showing list of the movies that I like.
 
 ### MovieCard
 
-This component renders is rendering a movie card. Also allows to remove movie from the list.
+This component is responsible for rendering a movie card. Also allows to remove movie from the list & show additional information about the movie.
 
 ### SubmitForm
 
