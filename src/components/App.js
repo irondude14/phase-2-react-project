@@ -1,7 +1,7 @@
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 import Nav from './Nav';
-import MoviesList from './MovieList';
+import MoviesList from './MoviesList';
 import About from './About';
 
 export default function App() {
