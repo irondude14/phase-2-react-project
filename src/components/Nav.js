@@ -1,17 +1,17 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { Outlet, Link } from 'react-router-dom';
 
 export default function Nav() {
   return (
     <div>
       <h2>My Movie List</h2>
       <img alt='movie-list-logo'></img>
-      <NavLink to='/movielist' exact>
-        MovieList
-      </NavLink>
-      <NavLink to='/about' exact>
-        About
-      </NavLink>
+      <nav>
+        <Link to='/movielist'>MovieList</Link>
+        <Link to='/about'>About</Link>
+      </nav>
+
+      <Outlet />
     </div>
   );
 }

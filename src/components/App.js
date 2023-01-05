@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, Switch } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import Nav from './Nav';
 import MovieList from './MovieList';
 import About from './About';
@@ -7,15 +7,12 @@ import About from './About';
 export default function App() {
   return (
     <div>
-      <Nav />
-      <Switch>
-        <Route exact path='/movielist'>
-          <MovieList />
+      <Routes>
+        <Route path='/' element={<Nav />}>
+          <Route path='movielist' element={<MovieList />} />
+          <Route path='about' element={<About />} />
         </Route>
-        <Route exact path='/about'>
-          <About />
-        </Route>
-      </Switch>
+      </Routes>
     </div>
   );
 }
