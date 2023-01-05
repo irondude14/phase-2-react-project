@@ -1,7 +1,7 @@
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 import Nav from './Nav';
-import MovieList from './MovieList';
+import MoviesList from './MovieList';
 import About from './About';
 
 export default function App() {
@@ -9,7 +9,7 @@ export default function App() {
     <div>
       <Routes>
         <Route path='/' element={<Nav />}>
-          <Route path='movielist' element={<MovieList />} />
+          <Route path='movielist' element={<MoviesList />} />
           <Route path='about' element={<About />} />
         </Route>
       </Routes>
