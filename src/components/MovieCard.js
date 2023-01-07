@@ -13,7 +13,7 @@ export default function MovieCard({ movie }) {
       {showInfo && (
         <div>
           <p>Release year: {movie.year}</p>
-          <p>{movie.description}</p>
+          <p>Description: {movie.description}</p>
         </div>
       )}
       <div>
