@@ -3,8 +3,7 @@ import React from 'react';
 export default function About() {
   return (
     <div>
-      <h2>Welcome!</h2>
-      <p>This is the list of my favorite movies!</p>
+      <h3>Created by:</h3>
       <em>Created by me!</em>
     </div>
   );
