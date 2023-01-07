@@ -3,6 +3,7 @@ import { Route, Routes } from 'react-router-dom';
 import Nav from './Nav';
 import MoviesList from './MoviesList';
 import About from './About';
+import Filter from './Filter';
 
 export default function App() {
   return (

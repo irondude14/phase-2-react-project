@@ -1,5 +1,6 @@
 import React from 'react';
 import { Outlet, Link } from 'react-router-dom';
+import Filter from './Filter';
 
 export default function Nav() {
   return (
@@ -10,6 +11,7 @@ export default function Nav() {
         <Link to='/movieslist'>Movies List</Link>
         <Link to='/about'>About</Link>
       </nav>
+      <Filter />
 
       <Outlet />
     </div>
