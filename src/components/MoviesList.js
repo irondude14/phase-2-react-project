@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import MovieCard from './MovieCard';
+import Filter from './Filter';
 
 export default function MoviesList() {
   const [movies, setMovies] = useState([]);
@@ -20,5 +21,10 @@ export default function MoviesList() {
     );
   });
 
-  return <div>{displayMovies}</div>;
+  return (
+    <div>
+      <Filter />
+      {displayMovies}
+    </div>
+  );
 }
