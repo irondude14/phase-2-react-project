@@ -27,6 +27,13 @@
       "name": "The Seventh Seal",
       "year": "1957",
       "description": "A knight returning to Sweden after the Crusades seeks answers about life, death, and the existence of God as he plays chess against the Grim Reaper during the Black Plague."
+    },
+    {
+      "id": 5,
+      "image": "https://m.media-amazon.com/images/M/MV5BMTNlNzkxMGMtY2RlNC00NDU5LWFlNzEtOTg2NDQ0OTllMmMzXkEyXkFqcGdeQXVyMDI2NDg0NQ@@._V1_.jpg",
+      "name": "Parasite",
+      "year": 2019,
+      "description": "Greed and class discrimination threaten the newly formed symbiotic relationship between the wealthy Park family and the destitute Kim clan."
     }
   ]
 }
