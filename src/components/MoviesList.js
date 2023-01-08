@@ -4,6 +4,7 @@ import Filter from './Filter';
 
 export default function MoviesList() {
   const [movies, setMovies] = useState([]);
+  const [sortBy, setSortBy] = useState('none');
 
   useEffect(() => {
     fetch('http://localhost:3000/movies')
@@ -13,7 +14,15 @@ export default function MoviesList() {
       });
   }, []);
 
-  const displayMovies = movies.map((movie) => {
+  let sortedMovies = movies.sort((movieA, movieB) => {
+    if (sortBy === 'none') {
+      return movies;
+    } else if (sortBy === 'year') {
+      return movieA.year - movieB.year;
+    }
+  });
+
+  const displayMovies = sortedMovies.map((movie) => {
     return (
       <div key={movie.id}>
         <MovieCard movie={movie} />
@@ -23,7 +32,7 @@ export default function MoviesList() {
 
   return (
     <div>
-      <Filter />
+      <Filter setSortBy={setSortBy} />
       {displayMovies}
     </div>
   );

@@ -1,11 +1,14 @@
 import React, { useState } from 'react';
 
-export default function Filter() {
-  const [sortBy, setSortBy] = useState('none');
+export default function Filter({ setSortBy }) {
+  function handleSort(event) {
+    setSortBy(event.target.value);
+  }
+
   return (
     <>
-      <select defaultValue={'none'}>
-        <label>Sort By:</label>
+      <label>Sort By: </label>
+      <select onChange={handleSort}>
         <option value='none'>None</option>
         <option value='year'>Year</option>
       </select>
