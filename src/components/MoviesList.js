@@ -14,11 +14,13 @@ export default function MoviesList() {
       });
   }, []);
 
-  let sortedMovies = movies.sort((movieA, movieB) => {
+  const sortedMovies = movies.sort((movieA, movieB) => {
     if (sortBy === 'none') {
-      return movies;
+      return true;
     } else if (sortBy === 'year') {
       return movieA.year - movieB.year;
+    } else if (sortBy === 'name') {
+      return movieA.name.toUpperCase().localeCompare(movieB.name.toUpperCase());
     }
   });
 
