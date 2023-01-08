@@ -22,9 +22,13 @@ The MoviesList Component is showing list of the movies that I like.
 
 This component is responsible for rendering a movie card. Also allows to remove movie from the list & show additional information about the movie.
 
-### SubmitForm
+### MovieForm
 
 This component has a form that allows to add a movie to the list.
+
+### Filter
+
+This component is allowing us to filter Movies List.
 
 ### About
 
