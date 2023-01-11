@@ -12,7 +12,11 @@ The Nav component has the following functionality/features:
 
 1. NightMode Toggle;
 2. Name and Logo of the App;
-3. Basic navigation buttons;
+3. Basic navigation buttons:
+   3.1. Home;
+   3.2. MMovies List;
+   3.3. Add a Movie;
+   3.4. About.
 
 ### MoviesList
 
@@ -20,7 +24,7 @@ The MoviesList Component is showing list of the movies that I like.
 
 ### MovieCard
 
-This component is responsible for rendering a movie card. Also allows to remove movie from the list & show additional information about the movie.
+This component is responsible for rendering a movie card. Also allows to show additional information about the movie.
 
 ### MovieForm
 
