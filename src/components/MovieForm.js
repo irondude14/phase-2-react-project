@@ -6,9 +6,20 @@ export default function MovieForm() {
   const [image, setImage] = useState('');
   const [description, setDescription] = useState('');
 
+  function handleSubmit(event) {
+    event.preventDefault();
+    const formData = {
+      movieName,
+      year,
+      description,
+      image,
+    };
+    console.log(formData);
+  }
+
   return (
-    <form>
-      <h1>Add a Movie</h1>
+    <form onSubmit={handleSubmit}>
+      <h2>Add A Movie</h2>
       <label htmlFor='movieName'>Movie Name:</label>
       <input
         type='text'
@@ -43,6 +54,8 @@ export default function MovieForm() {
         src='https://www.wallpapertip.com/wmimgs/24-247100_14-movie-collage.jpg'
         alt='poster preview'
       />
+
+      <input type='submit' value='Add A Movie' />
     </form>
   );
 }
