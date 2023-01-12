@@ -14,10 +14,6 @@ export default function MovieForm() {
       description,
       image,
     };
-    console.log(
-      '🚀 ~ file: MovieForm.js:12 ~ handleSubmit ~ formData',
-      formData
-    );
     fetch('http://localhost:3000/movies', {
       method: 'POST',
       headers: {
@@ -30,7 +26,7 @@ export default function MovieForm() {
   return (
     <form onSubmit={handleSubmit}>
       <h2>Add A Movie</h2>
-      <label htmlFor='title'>Movie Name:</label>
+      <label htmlFor='title'>Movie Name: </label>
       <input
         type='text'
         id='movieName'
@@ -38,7 +34,7 @@ export default function MovieForm() {
         onChange={(e) => setTitle(e.target.value)}
       />
 
-      <label htmlFor='year'>Year of the release:</label>
+      <label htmlFor='year'>Year of the release: </label>
       <input
         type='text'
         id='year'
@@ -46,14 +42,14 @@ export default function MovieForm() {
         onChange={(e) => setYear(e.target.value)}
       />
 
-      <label htmlFor='description'>Movie description:</label>
-      <input
+      <label htmlFor='description'>Movie description: </label>
+      <textarea
         type='text'
         id='description'
         value={description}
         onChange={(e) => setDescription(e.target.value)}
       />
-      <label htmlFor='image'>Movie poster:</label>
+      <label htmlFor='image'>Movie poster: </label>
       <input
         type='text'
         id='image'
