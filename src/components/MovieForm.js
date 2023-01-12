@@ -14,7 +14,17 @@ export default function MovieForm() {
       description,
       image,
     };
-    console.log(formData);
+    console.log(
+      '🚀 ~ file: MovieForm.js:12 ~ handleSubmit ~ formData',
+      formData
+    );
+    fetch('http://localhost:3000/movies', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(formData),
+    });
   }
 
   return (
