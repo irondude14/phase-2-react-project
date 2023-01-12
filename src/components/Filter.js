@@ -11,7 +11,7 @@ export default function Filter({ setSortBy }) {
       <select onChange={handleSort}>
         <option value='none'>None</option>
         <option value='year'>Year</option>
-        <option value='name'>Alphabetical</option>
+        <option value='title'>Alphabetical</option>
       </select>
     </>
   );

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 export default function MovieForm() {
-  const [movieName, setMovieName] = useState('');
+  const [title, setTitle] = useState('');
   const [year, setYear] = useState('');
   const [image, setImage] = useState('');
   const [description, setDescription] = useState('');
@@ -9,7 +9,7 @@ export default function MovieForm() {
   function handleSubmit(event) {
     event.preventDefault();
     const formData = {
-      movieName,
+      title,
       year,
       description,
       image,
@@ -30,12 +30,12 @@ export default function MovieForm() {
   return (
     <form onSubmit={handleSubmit}>
       <h2>Add A Movie</h2>
-      <label htmlFor='movieName'>Movie Name:</label>
+      <label htmlFor='title'>Movie Name:</label>
       <input
         type='text'
         id='movieName'
-        value={movieName}
-        onChange={(e) => setMovieName(e.target.value)}
+        value={title}
+        onChange={(e) => setTitle(e.target.value)}
       />
 
       <label htmlFor='year'>Year of the release:</label>

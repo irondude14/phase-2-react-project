@@ -19,8 +19,10 @@ export default function MoviesList() {
       return true;
     } else if (sortBy === 'year') {
       return movieA.year - movieB.year;
-    } else if (sortBy === 'name') {
-      return movieA.name.toUpperCase().localeCompare(movieB.name.toUpperCase());
+    } else if (sortBy === 'title') {
+      return movieA.title
+        .toUpperCase()
+        .localeCompare(movieB.title.toUpperCase());
     }
   });
 

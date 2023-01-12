@@ -8,8 +8,8 @@ export default function MovieCard({ movie }) {
   }
   return (
     <div>
-      <h3>{movie.name}</h3>
-      <img src={movie.image} alt={movie.name} />
+      <h3>{movie.title}</h3>
+      <img src={movie.image} alt={movie.title + ' poster'} />
       {showInfo && (
         <div>
           <p>Release year: {movie.year}</p>
