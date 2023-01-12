@@ -35,7 +35,7 @@ export default function MoviesList() {
   });
 
   return (
-    <div>
+    <div className='movie-list'>
       <Filter setSortBy={setSortBy} />
       {displayMovies}
     </div>
