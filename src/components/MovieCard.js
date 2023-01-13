@@ -7,7 +7,7 @@ export default function MovieCard({ movie }) {
     setShowInfo(!showInfo);
   }
   return (
-    <div>
+    <div className='movie-card'>
       <h3>{movie.title}</h3>
       <img src={movie.image} alt={movie.title + ' poster'} />
       {showInfo && (

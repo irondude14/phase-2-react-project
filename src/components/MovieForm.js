@@ -6,6 +6,9 @@ export default function MovieForm() {
   const [image, setImage] = useState('');
   const [description, setDescription] = useState('');
 
+  const alt =
+    'https://pbs.twimg.com/media/D_tqrc8XYAEExdd?format=jpg&name=large';
+
   function handleSubmit(event) {
     event.preventDefault();
     const formData = {
@@ -24,44 +27,37 @@ export default function MovieForm() {
   }
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form className='submission-form' onSubmit={handleSubmit}>
       <h2>Add A Movie</h2>
-      <label htmlFor='title'>Movie Name: </label>
+      <label htmlFor='title'>Movie Title:</label>
       <input
         type='text'
-        id='movieName'
         value={title}
         onChange={(e) => setTitle(e.target.value)}
       />
 
-      <label htmlFor='year'>Year of the release: </label>
+      <label htmlFor='year'>Year of the release:</label>
       <input
         type='text'
-        id='year'
         value={year}
         onChange={(e) => setYear(e.target.value)}
       />
 
-      <label htmlFor='description'>Movie description: </label>
+      <label htmlFor='description'>Movie description:</label>
       <textarea
         type='text'
-        id='description'
         value={description}
         onChange={(e) => setDescription(e.target.value)}
       />
-      <label htmlFor='image'>Movie poster: </label>
+      <label htmlFor='image'>Movie poster:</label>
       <input
         type='text'
-        id='image'
         value={image}
         onChange={(e) => setImage(e.target.value)}
       />
-      <img
-        src='https://www.wallpapertip.com/wmimgs/24-247100_14-movie-collage.jpg'
-        alt='poster preview'
-      />
+      <img src={image} alt={'Poster Preview'} />
 
-      <input type='submit' value='Add A Movie' />
+      <input type='submit' value='Add A Movie' id='submitBtn' />
     </form>
   );
 }

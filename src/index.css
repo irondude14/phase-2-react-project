@@ -9,16 +9,26 @@ body {
   padding: 2em;
   background: #fff;
   display: flex;
-  /* position: fixed;
-  left: 0;
-  top: 0;
-  bottom: 0; */
   flex-direction: column;
+  background: cyan;
+  height: 3rem;
+}
+
+.header h2 {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header img {
+  display: block;
+  width: 5rem;
 }
 
 .nav {
   flex-grow: 1;
   padding: 2px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .nav-list {
@@ -26,26 +36,91 @@ body {
   padding: 0.5em;
   display: flex;
   gap: 0.5em;
-  margin-left: 0.5em;
-  flex-direction: column;
-  height: 100%;
-}
-
-h2 {
-  margin: 0em 0 0;
+  background: lightblue;
 }
 
 .movie-list {
-  display: table-column;
-  column-count: 1;
-  column-width: 5em;
+  display: flex;
+  flex-direction: column;
+  padding: 2em;
+  background: pink;
 }
 
-.movie-list img {
-  width: 30em;
-}
-
-.movie-list p {
-  width: 30em;
+.movie-list label {
+  display: flex;
+  margin-left: auto;
   margin-right: auto;
+}
+
+.movie-list select {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.movie-card {
+  max-width: 30rem;
+  margin: 1rem auto;
+  border: 2px solid blueviolet;
+  padding: 5px;
+}
+
+.movie-card img {
+  width: 30rem;
+}
+
+.movie-card p {
+  width: 30rem;
+  margin-right: auto;
+}
+
+.submission-form {
+  max-width: 20rem;
+  margin: 2rem auto;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid violet;
+  display: flex;
+  flex-direction: column;
+  background: orange;
+}
+
+.submission-form img {
+  width: 18rem;
+  border: 1px solid black;
+}
+
+.submission-form label {
+  display: block;
+  padding: 0.5rem;
+  margin-right: auto;
+}
+
+.submission-form input {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.submission-form textarea {
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+  width: 19rem;
+}
+
+#submitBtn {
+  border: 0;
+  background: #343050;
+  padding: 0.5rem;
+  color: white;
+  display: flex;
+  flex-grow: 0;
+  margin: 1rem 6.8rem;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+#submitBtn:hover {
+  background: #3498db;
 }
