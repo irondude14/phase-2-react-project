@@ -6,6 +6,16 @@ export default function MovieCard({ movie }) {
   function handleShowInfo() {
     setShowInfo(!showInfo);
   }
+
+  function handleDelete() {
+    fetch('http://localhost:3000/movies/' + movie.id, {
+      method: 'DELETE',
+      headers: {
+        'Content-type': 'application/json',
+      },
+    });
+  }
+
   return (
     <div className='movie-card' onClick={handleShowInfo}>
       <h3>{movie.title}</h3>
@@ -14,6 +24,9 @@ export default function MovieCard({ movie }) {
         <div>
           <p>Release year: {movie.year}</p>
           <p>Description: {movie.description}</p>
+          <button id='deleteBtn' onClick={handleDelete}>
+            Remove
+          </button>
         </div>
       )}
     </div>

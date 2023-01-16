@@ -2,27 +2,23 @@ body {
   margin: 0;
   min-height: 100vh;
   line-height: 1;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 1em;
-  background: rgb(20 184 166);
+  background: #0093e9;
 }
 .header {
   padding: 2em;
   background: #fff;
   display: flex;
   flex-direction: column;
-  background: rgb(20 184 0);
-  height: 3rem;
+  height: 1rem;
+  background: #0093e9;
 }
 
 .header h2 {
   margin-left: auto;
   margin-right: auto;
-}
-
-.header img {
-  display: block;
-  width: 5rem;
+  margin-top: 0;
 }
 
 .nav {
@@ -30,6 +26,8 @@ body {
   padding: 2px;
   margin-left: auto;
   margin-right: auto;
+  background: whitesmoke;
+  border-radius: 4px;
 }
 
 .nav-list {
@@ -37,7 +35,14 @@ body {
   padding: 0.5em;
   display: flex;
   gap: 0.5em;
-  background: green;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  scale: 1.05;
 }
 
 .movie-list {
@@ -64,6 +69,9 @@ body {
   background: whitesmoke;
   border-radius: 4px;
   padding: 5px;
+}
+.movie-card:hover {
+  scale: 1.02;
 }
 
 .movie-card h3 {
@@ -139,5 +147,23 @@ body {
 }
 
 #submitBtn:hover {
+  background: #3498db;
+}
+
+#deleteBtn {
+  border: 0;
+  background: #343050;
+  padding: 0.5rem;
+  color: white;
+  display: flex;
+  flex-grow: 0;
+  margin: auto;
+  margin-top: 6px;
+  margin-bottom: 6px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+#deleteBtn:hover {
   background: #3498db;
 }
