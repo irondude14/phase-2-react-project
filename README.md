@@ -24,7 +24,7 @@ The MovieList Component is showing list of the movies that I like.
 
 ### MovieCard
 
-This component is responsible for rendering a movie card. Also allows to show additional information about the movie.
+This component is responsible for rendering a movie card. Also allows to show additional information about the movie. "REMOVE" button deletes a movie from the database.
 
 ### MovieForm
 
