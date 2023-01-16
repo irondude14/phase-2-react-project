@@ -3,7 +3,9 @@ import React, { useState } from 'react';
 export default function MovieForm() {
   const [title, setTitle] = useState('');
   const [year, setYear] = useState('');
-  const [image, setImage] = useState('');
+  const [image, setImage] = useState(
+    'https://wallpapercave.com/wp/wp4064011.jpg'
+  );
   const [description, setDescription] = useState('');
 
   const alt =

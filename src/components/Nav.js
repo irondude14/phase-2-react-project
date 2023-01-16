@@ -12,7 +12,7 @@ export default function Nav() {
       <nav className='nav'>
         <ul className='nav-list'>
           <Link to='/home'>Home </Link>
-          <Link to='/movieslist'>Movies List </Link>
+          <Link to='/movielist'>Movie List </Link>
           <Link to='/movieform'>Add a Movie</Link>
           <Link to='/about'>About</Link>
         </ul>

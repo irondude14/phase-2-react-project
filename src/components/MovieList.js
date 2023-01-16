@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import MovieCard from './MovieCard';
 import Filter from './Filter';
 
-export default function MoviesList() {
+export default function MovieList() {
   const [movies, setMovies] = useState([]);
   const [sortBy, setSortBy] = useState('none');
 

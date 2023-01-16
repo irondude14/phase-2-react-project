@@ -14,13 +14,13 @@ The Nav component has the following functionality/features:
 2. Name and Logo of the App;
 3. Basic navigation buttons:
    3.1. Home;
-   3.2. MMovies List;
+   3.2. Movie List;
    3.3. Add a Movie;
    3.4. About.
 
-### MoviesList
+### MovieList
 
-The MoviesList Component is showing list of the movies that I like.
+The MovieList Component is showing list of the movies that I like.
 
 ### MovieCard
 
