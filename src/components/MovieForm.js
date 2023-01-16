@@ -28,7 +28,7 @@ export default function MovieForm() {
 
   return (
     <form className='submission-form' onSubmit={handleSubmit}>
-      <h2>Add A Movie</h2>
+      <h3>Add Movie</h3>
       <label htmlFor='title'>Movie Title:</label>
       <input
         type='text'

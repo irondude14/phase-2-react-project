@@ -4,13 +4,14 @@ body {
   line-height: 1;
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 1em;
+  background: rgb(20 184 166);
 }
 .header {
   padding: 2em;
   background: #fff;
   display: flex;
   flex-direction: column;
-  background: cyan;
+  background: rgb(20 184 0);
   height: 3rem;
 }
 
@@ -36,14 +37,13 @@ body {
   padding: 0.5em;
   display: flex;
   gap: 0.5em;
-  background: lightblue;
+  background: green;
 }
 
 .movie-list {
   display: flex;
   flex-direction: column;
   padding: 2em;
-  background: pink;
 }
 
 .movie-list label {
@@ -61,8 +61,14 @@ body {
 .movie-card {
   max-width: 30rem;
   margin: 1rem auto;
-  border: 2px solid blueviolet;
+  background: whitesmoke;
+  border-radius: 4px;
   padding: 5px;
+}
+
+.movie-card h3 {
+  margin: auto;
+  padding-bottom: 6px;
 }
 
 .movie-card img {
@@ -72,6 +78,8 @@ body {
 .movie-card p {
   width: 30rem;
   margin-right: auto;
+  margin: auto;
+  padding-top: 6px;
 }
 
 .submission-form {
@@ -79,15 +87,24 @@ body {
   margin: 2rem auto;
   margin-left: auto;
   margin-right: auto;
-  border: 2px solid violet;
+  border-radius: 4px;
   display: flex;
   flex-direction: column;
-  background: orange;
+  background: whitesmoke;
+}
+
+.submission-form h3 {
+  margin-left: 6px;
+  margin-top: 6px;
+  margin-bottom: 6px;
 }
 
 .submission-form img {
   width: 18rem;
   border: 1px solid black;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 6px;
 }
 
 .submission-form label {
@@ -99,13 +116,13 @@ body {
 .submission-form input {
   display: block;
   margin-right: auto;
-  margin-left: auto;
+  margin-left: 6px;
 }
 
 .submission-form textarea {
   display: flex;
   margin-right: auto;
-  margin-left: auto;
+  margin-left: 6px;
   width: 19rem;
 }
 

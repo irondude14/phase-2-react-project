@@ -7,7 +7,7 @@ export default function MovieCard({ movie }) {
     setShowInfo(!showInfo);
   }
   return (
-    <div className='movie-card'>
+    <div className='movie-card' onClick={handleShowInfo}>
       <h3>{movie.title}</h3>
       <img src={movie.image} alt={movie.title + ' poster'} />
       {showInfo && (
@@ -16,11 +16,6 @@ export default function MovieCard({ movie }) {
           <p>Description: {movie.description}</p>
         </div>
       )}
-      <div>
-        <button onClick={handleShowInfo}>
-          {showInfo ? 'Hide Info' : 'Show More Info'}
-        </button>
-      </div>
     </div>
   );
 }
