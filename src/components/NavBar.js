@@ -1,7 +1,7 @@
 import React from 'react';
 import { Outlet, Link } from 'react-router-dom';
 
-export default function Nav() {
+export default function NavBar() {
   return (
     <div className='header'>
       <h2>My Movie List</h2>
