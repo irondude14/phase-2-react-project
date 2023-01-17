@@ -6,13 +6,13 @@ export default function Filter({ setSortBy }) {
   }
 
   return (
-    <>
+    <div className='filter-bar'>
       <label>Sort By: </label>
       <select onChange={handleSort}>
         <option value='none'>None</option>
         <option value='year'>Year</option>
         <option value='title'>Alphabetical</option>
       </select>
-    </>
+    </div>
   );
 }

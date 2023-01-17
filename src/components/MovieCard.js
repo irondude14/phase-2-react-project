@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 
 export default function MovieCard({ movie }) {
   const [showInfo, setShowInfo] = useState(false);
+  const [remove, setRemove] = useState(false);
 
   function handleShowInfo() {
     setShowInfo(!showInfo);
@@ -14,6 +15,7 @@ export default function MovieCard({ movie }) {
         'Content-type': 'application/json',
       },
     });
+    setRemove(!remove);
   }
 
   return (

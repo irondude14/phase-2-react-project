@@ -1,18 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro');
+
 body {
   margin: 0;
-  min-height: 100vh;
-  line-height: 1;
-  font-family: 'Poppins', sans-serif;
-  font-size: 1em;
-  background: #0093e9;
+  background: linear-gradient(45deg, #242f36, #161d2c, #26d07c);
+  font-family: 'Crimson Pro', serif;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 .header {
   padding: 2em;
-  background: #fff;
   display: flex;
   flex-direction: column;
-  height: 1rem;
-  background: #0093e9;
+  height: 0rem;
 }
 
 .header h2 {
@@ -22,12 +21,12 @@ body {
 }
 
 .nav {
-  flex-grow: 1;
   padding: 2px;
-  margin-left: auto;
-  margin-right: auto;
   background: whitesmoke;
   border-radius: 4px;
+  position: fixed;
+  right: 5rem;
+  top: 6rem;
 }
 
 .nav-list {
@@ -35,6 +34,7 @@ body {
   padding: 0.5em;
   display: flex;
   gap: 0.5em;
+  flex-direction: column;
 }
 
 a {
@@ -46,21 +46,13 @@ a:hover {
 }
 
 .movie-list {
-  display: flex;
-  flex-direction: column;
-  padding: 2em;
+  padding: 0em;
 }
 
-.movie-list label {
-  display: flex;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.movie-list select {
-  display: flex;
-  margin-left: auto;
-  margin-right: auto;
+.filter-bar {
+  position: fixed;
+  right: 5rem;
+  top: 14rem;
 }
 
 .movie-card {
@@ -91,8 +83,8 @@ a:hover {
 }
 
 .submission-form {
-  max-width: 20rem;
-  margin: 2rem auto;
+  max-width: 30rem;
+  margin-top: 1rem;
   margin-left: auto;
   margin-right: auto;
   border-radius: 4px;
@@ -147,7 +139,7 @@ a:hover {
 }
 
 #submitBtn:hover {
-  background: #3498db;
+  background: #161d2c;
 }
 
 #deleteBtn {
@@ -165,5 +157,26 @@ a:hover {
 }
 
 #deleteBtn:hover {
-  background: #3498db;
+  background: #161d2c;
+}
+
+.home-screen {
+  display: flex;
+  flex-direction: column;
+  background: whitesmoke;
+  border-radius: 4px;
+  max-width: 30rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.home-screen h3 {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.home-screen p {
+  margin-top: auto;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
 }
