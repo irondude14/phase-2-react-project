@@ -6,17 +6,15 @@ This App has a list of my favorite movies.
 
 This app the following list of components:
 
-### Nav
+### NavBar
 
-The Nav component has the following functionality/features:
+The NavBar component has the following functionality/features:
 
-1. NightMode Toggle;
-2. Name and Logo of the App;
-3. Basic navigation buttons:
-   3.1. Home;
-   3.2. Movie List;
-   3.3. Add a Movie;
-   3.4. About.
+1. Name of the Website/App;
+2. Basic navigation buttons:
+   2.1. Home;
+   2.2. Movie List;
+   2.3. Add a Movie;
 
 ### MovieList
 
