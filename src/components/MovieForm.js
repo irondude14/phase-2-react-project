@@ -8,9 +8,6 @@ export default function MovieForm() {
   );
   const [description, setDescription] = useState('');
 
-  const alt =
-    'https://pbs.twimg.com/media/D_tqrc8XYAEExdd?format=jpg&name=large';
-
   function handleSubmit(event) {
     event.preventDefault();
     const formData = {
