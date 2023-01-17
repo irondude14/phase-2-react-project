@@ -180,3 +180,10 @@ a:hover {
   margin-left: 0.5rem;
   margin-right: 0.5rem;
 }
+
+.footer {
+  color: white;
+  position: fixed;
+  left: 2rem;
+  bottom: 1rem;
+}

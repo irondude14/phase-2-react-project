@@ -10,7 +10,6 @@ export default function Nav() {
           <Link to='/home'>Home </Link>
           <Link to='/movielist'>Movie List </Link>
           <Link to='/movieform'>Add a Movie</Link>
-          <Link to='/about'>About</Link>
         </ul>
       </nav>
 
