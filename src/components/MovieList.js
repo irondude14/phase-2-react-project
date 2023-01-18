@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import MovieCard from './MovieCard';
 import Filter from './Filter';
 
-export default function MovieList({ movies }) {
+export default function MovieList({ movies, onRemoveMovie }) {
   const [sortBy, setSortBy] = useState('none');
 
   const sortedMovies = [...movies].sort((movieA, movieB) => {
@@ -20,7 +20,7 @@ export default function MovieList({ movies }) {
   const displayMovies = sortedMovies.map((movie) => {
     return (
       <div key={movie.id}>
-        <MovieCard movie={movie} />
+        <MovieCard movie={movie} onRemoveMovie={onRemoveMovie} />
       </div>
     );
   });

@@ -35,7 +35,6 @@ export default function MovieForm({ onAddMovie }) {
         setDescription('');
         navigate('/movielist');
       });
-    // clear form fields after the submission
   }
 
   return (

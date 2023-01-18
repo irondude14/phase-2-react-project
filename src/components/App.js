@@ -21,13 +21,20 @@ export default function App() {
     setMovies([...movies, newMovie]);
   }
 
+  function removeMovie(id) {
+    setMovies(movies.filter((movie) => movie.id != id));
+  }
+
   return (
     <>
       <Routes>
         <Route path='/' element={<NavBar />}>
           <Route exact path='/' element={<Navigate to='/home' />} />
           <Route path='home' element={<Home />} />
-          <Route path='movielist' element={<MovieList movies={movies} />} />
+          <Route
+            path='movielist'
+            element={<MovieList movies={movies} onRemoveMovie={removeMovie} />}
+          />
           <Route
             path='movieform'
             element={<MovieForm onAddMovie={addMovie} />}
