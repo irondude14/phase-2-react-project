@@ -15,6 +15,7 @@ export default function MovieCard({ movie, onRemoveMovie }) {
       },
     });
     onRemoveMovie(movie.id);
+    alert('Movie has been removed.');
   }
 
   return (

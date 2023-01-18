@@ -22,7 +22,7 @@ export default function App() {
   }
 
   function removeMovie(id) {
-    setMovies(movies.filter((movie) => movie.id != id));
+    setMovies(movies.filter((movie) => movie.id !== id));
   }
 
   return (
