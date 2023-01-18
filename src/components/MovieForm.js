@@ -1,12 +1,15 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
-export default function MovieForm() {
+export default function MovieForm({ onAddMovie }) {
   const [title, setTitle] = useState('');
   const [year, setYear] = useState('');
   const [image, setImage] = useState(
     'https://wallpapercave.com/wp/wp4064011.jpg'
   );
   const [description, setDescription] = useState('');
+
+  const navigate = useNavigate();
 
   function handleSubmit(event) {
     event.preventDefault();
@@ -22,7 +25,17 @@ export default function MovieForm() {
         'Content-Type': 'application/json',
       },
       body: JSON.stringify(formData),
-    });
+    })
+      .then((r) => r.json())
+      .then((data) => {
+        onAddMovie(data);
+        setTitle('');
+        setYear('');
+        setImage('https://wallpapercave.com/wp/wp4064011.jpg');
+        setDescription('');
+        navigate('/movielist');
+      });
+    // clear form fields after the submission
   }
 
   return (

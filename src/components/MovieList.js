@@ -2,19 +2,10 @@ import React, { useEffect, useState } from 'react';
 import MovieCard from './MovieCard';
 import Filter from './Filter';
 
-export default function MovieList() {
-  const [movies, setMovies] = useState([]);
+export default function MovieList({ movies }) {
   const [sortBy, setSortBy] = useState('none');
 
-  useEffect(() => {
-    fetch('http://localhost:3000/movies')
-      .then((res) => res.json())
-      .then((data) => {
-        setMovies(data);
-      });
-  }, []);
-
-  const sortedMovies = movies.sort((movieA, movieB) => {
+  const sortedMovies = [...movies].sort((movieA, movieB) => {
     if (sortBy === 'none') {
       return true;
     } else if (sortBy === 'year') {
