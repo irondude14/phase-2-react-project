@@ -34,7 +34,6 @@ export default function MovieForm({ onAddMovie }) {
         setImage('https://wallpapercave.com/wp/wp4064011.jpg');
         setDescription('');
         navigate('/movielist');
-        alert('Movie has been added!');
       });
   }
 
